@@ -54,7 +54,7 @@ class KnowledgeBase(object):
             if not test_result:
                 continue
             else:
-                final_result.add_bindings(test_result)
+                final_result.add_bindings(test_result, [fact_in_kb])
 
         if len(final_result.list_of_bindings) == 0:
             return False
